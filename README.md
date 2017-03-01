@@ -4,25 +4,26 @@
 
 ## User Stories
 
-The following **required** functionality is completed:
+The following **core** user stories:
 
-- [ ] Allow gamers to search an expansive database of games
-- [ ] Allow gamers to track unreleased games and stay up to date on release info (push notifications)
-- [ ] View wishlist
-- [ ] Post to cloud backend (Parse/FireBase)
-- [ ] 
+- [ ] User can create account and log in with their credentials
+    - [ ] Persist user across app restarts
+- [ ] Allow gamers to search an expansive database of games (provided by igdb.com)
+- [ ] User can see more details for a game chosen from the database (game details, rating, screenshots, etc.)
+    - [ ] User can see trailers for a game
+- [ ] Allow user to track unreleased games and stay up to date on release info by adding them to a wish list that is easily accessible
+- [ ] Allow user to set notification preferences for games in which they want to receive up to date notifications for release info
+- [ ] Random Game Suggestor - randomly suggests a new/popular game based on the users filters
+- [ ] If user wants to buy a game, we will provide a button that will take them to a website where they can purchase it
+- [ ] User can edit their profile and customize settings
 
 
 The following **optional** features are implemented:
 
-- [ ] User can load more tweets once they reach the bottom of the feed using infinite loading similar to the actual Twitter client.
-- [ ] User should be able to unretweet and unfavorite and should decrement the retweet and favorite count.
-- [ ] User can pull to refresh.
+- [ ] User can share his/her wishlist with friends
+- [ ] Apple Watch support
+- [ ] Custom notification settings on a per game basis
 
-Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
-
-1. 
-2. 
 
 ## Video Walkthrough 
 
