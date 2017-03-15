@@ -1,6 +1,6 @@
 # Launch Day
 
-**Launch Day** is an iOS app that allows a gamer to search and find video games that are currently out or track games that are yet to release.  The user can keep a wish list of games that includes games they might have pre-ordered to get real time notifications on release information (or price info TBD). Also, looking to integrate apple watch support to be able to view/edit wishlist from the apple watch. We will be using the data that is freely provided by the Internet Game Database (<a src='igdb.com' />).
+**Launch Day** is an iOS app that allows a gamer to search and find video games that are currently out or track games that are yet to release.  The user can keep a wish list of games that includes games they might have pre-ordered to get real time notifications on release information (or price info TBD). Also, looking to integrate apple watch support to be able to view/edit wishlist from the apple watch. We will be using the data that is freely provided by the Internet Game Database (<a href="https://www.igdb.com/api">igdb.com</a>).
 
 ## User Stories
 
