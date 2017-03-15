@@ -25,6 +25,17 @@ The following **optional** features are implemented:
 - [ ] Custom notification settings on a per game basis
 
 
+## Data Schema 
+
+Here's a walkthrough of the model classes for our app:
+
+**User**
+<img src='userSchema.png' title='User Schema' width='' alt='User Schema' />
+
+**Game**
+<img src='gameSchema.png' title='Game Schema' width='' alt='Game Schema' />
+
+
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
