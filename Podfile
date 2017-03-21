@@ -7,6 +7,9 @@ target 'Ready4Launch' do
 
   # Pods for Ready4Launch
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
   pod 'Material', '~> 2.4.6'
+  pod 'DropDown'
 
 end
