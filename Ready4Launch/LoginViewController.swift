@@ -99,7 +99,7 @@ class LoginViewController: UIViewController {
                 if error == nil  {
                     UserDefaults.standard.setValue(user!.uid, forKey: "uid")
                     
-                    //self.performSegueWithIdentifier("loginSegue", sender: self)
+                    self.performSegue(withIdentifier: "loginSegue", sender: self)
                     
                 } else {
                     self.displayAlert(title: "Error", message: "\(error)")

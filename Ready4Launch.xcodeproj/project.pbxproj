@@ -15,6 +15,7 @@
 		A18F4D0E1E808BE90025670D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A18F4D0D1E808BE90025670D /* GoogleService-Info.plist */; };
 		A18F4D101E808D1C0025670D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18F4D0F1E808D1C0025670D /* LoginViewController.swift */; };
 		A18F4D151E809CE30025670D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18F4D141E809CE30025670D /* SignupViewController.swift */; };
+		A199B07E1E830F5300F0007D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199B07D1E830F5300F0007D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A18F4D0D1E808BE90025670D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A18F4D0F1E808D1C0025670D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A18F4D141E809CE30025670D /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		A199B07D1E830F5300F0007D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C44974338B4CECBC73276C8B /* Pods_Ready4Launch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ready4Launch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B54A4DCD36D90225D614AC /* Pods-Ready4Launch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready4Launch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ready4Launch/Pods-Ready4Launch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 			children = (
 				A18F4D0F1E808D1C0025670D /* LoginViewController.swift */,
 				A18F4D141E809CE30025670D /* SignupViewController.swift */,
+				A199B07D1E830F5300F0007D /* HomeViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				A18F4D151E809CE30025670D /* SignupViewController.swift in Sources */,
 				A18F4D101E808D1C0025670D /* LoginViewController.swift in Sources */,
 				A18F4CFA1E808B190025670D /* AppDelegate.swift in Sources */,
+				A199B07E1E830F5300F0007D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
