@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02AD08371E82E43E00D653A5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AD08361E82E43E00D653A5 /* Game.swift */; };
+		02AD08391E82E46D00D653A5 /* GameViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AD08381E82E46D00D653A5 /* GameViewModelProtocols.swift */; };
+		02AD083B1E82E4A500D653A5 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AD083A1E82E4A500D653A5 /* GameViewModel.swift */; };
 		482DBA65E4F74416D8EF73E0 /* Pods_Ready4Launch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44974338B4CECBC73276C8B /* Pods_Ready4Launch.framework */; };
 		A18F4CFA1E808B190025670D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18F4CF91E808B190025670D /* AppDelegate.swift */; };
 		A18F4CFF1E808B190025670D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18F4CFD1E808B190025670D /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02AD08361E82E43E00D653A5 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		02AD08381E82E46D00D653A5 /* GameViewModelProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModelProtocols.swift; sourceTree = "<group>"; };
+		02AD083A1E82E4A500D653A5 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		1911D8CB602E7BAB8D4EC629 /* Pods-Ready4Launch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ready4Launch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ready4Launch/Pods-Ready4Launch.debug.xcconfig"; sourceTree = "<group>"; };
 		A18F4CF61E808B190025670D /* Ready4Launch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ready4Launch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18F4CF91E808B190025670D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +120,9 @@
 		A18F4D131E808D3D0025670D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				02AD08361E82E43E00D653A5 /* Game.swift */,
+				02AD08381E82E46D00D653A5 /* GameViewModelProtocols.swift */,
+				02AD083A1E82E4A500D653A5 /* GameViewModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -243,9 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02AD083B1E82E4A500D653A5 /* GameViewModel.swift in Sources */,
 				A18F4D151E809CE30025670D /* SignupViewController.swift in Sources */,
 				A18F4D101E808D1C0025670D /* LoginViewController.swift in Sources */,
+				02AD08391E82E46D00D653A5 /* GameViewModelProtocols.swift in Sources */,
 				A18F4CFA1E808B190025670D /* AppDelegate.swift in Sources */,
+				02AD08371E82E43E00D653A5 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
