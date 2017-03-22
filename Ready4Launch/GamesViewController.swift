@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GamesViewController: UIViewController, GameViewModelDelegate {
+class GamesViewController: UIViewController, GameViewModelDelegate, UICollectionViewDelegate {
     
     // MARK: - Properties
     // MARK: -- Internal
@@ -25,8 +25,15 @@ class GamesViewController: UIViewController, GameViewModelDelegate {
         }
     }
 
+    @IBOutlet weak var gamesCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gamesCollectionView.delegate = self
+        
+        // Register Nibs
+        gamesCollectionView.register(GameCell.self)
 
         // Do any additional setup after loading the view.
     }
