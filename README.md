@@ -24,6 +24,12 @@ The following **optional** features are implemented:
 - [ ] Apple Watch support
 - [ ] Custom notification settings on a per game basis
 
+## Sprint 1
+- [ ] User can create account and log in with their credentials
+    - [ ] Persist user across app restarts
+- [ ] Allow gamers to search an expansive database of games (provided by igdb.com)
+    - [ ] Populate data via UICollectionView
+
 
 ## Data Schema 
 
