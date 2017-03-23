@@ -19,7 +19,7 @@ protocol GameViewModelProtocol {
     var releaseDates: [NSDictionary] { get }
     var nameText: String { get }
     var rating: String { get }
-    var cover: NSDictionary { get }
+    var cover: URL { get }
     var genres: [NSDictionary] { get }
     var videos: [NSDictionary] { get }
     var screenshots: [NSDictionary] { get }

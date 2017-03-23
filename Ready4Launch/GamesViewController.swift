@@ -81,8 +81,7 @@ class GamesViewController: UIViewController, GameViewModelDelegate, UICollection
             print(self.gameViewModels)
             self.gamesCollectionView.reloadData()
             
-            
-            }.resume()
+        }.resume()
         
         
     }

@@ -29,9 +29,13 @@ class GameViewModel: GameViewModelProtocol {
         return String(describing: game.rating)
     }
     
-    var cover: NSDictionary {
+    var cover: URL {
         //let image = UIImage(named: "dummy image")// Set Image with pod or using http://stackoverflow.com/questions/39813497/swift-3-display-image-from-url UIImage(data: game.cover)
-        return game.cover
+        let base_url = "https:"
+        var coverString = game.cover["url"] as! String
+        let coverUrlString = coverString.replacingOccurrences(of: "t_thumb", with: "t_cover_big_2x")
+        
+        return URL(string: base_url + coverUrlString)!
     }
     
     var genres: [NSDictionary] {

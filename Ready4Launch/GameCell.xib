@@ -21,15 +21,47 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLx-l0-0fu">
                         <rect key="frame" x="0.0" y="0.0" width="339" height="384"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xn4-SC-1pN">
-                                <rect key="frame" x="8" y="61" width="323" height="142"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xn4-SC-1pN">
+                                <rect key="frame" x="8" y="324" width="323" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jn-RK-0cO">
+                                <rect key="frame" x="8" y="353" width="58" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFA-Sc-mgL">
+                                <rect key="frame" x="74" y="353" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9V-G8-tDL">
+                                <rect key="frame" x="53" y="0.0" width="233" height="316"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="316" id="VVa-03-lj6"/>
+                                    <constraint firstAttribute="width" constant="233" id="eIL-o6-ZIn"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.15612066329999999" green="0.87609375" blue="0.23438090310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c9V-G8-tDL" firstAttribute="top" secondItem="YLx-l0-0fu" secondAttribute="top" id="4iT-ek-4E7"/>
+                            <constraint firstItem="0jn-RK-0cO" firstAttribute="leading" secondItem="YLx-l0-0fu" secondAttribute="leading" constant="8" id="4re-60-5hh"/>
+                            <constraint firstAttribute="bottom" secondItem="0jn-RK-0cO" secondAttribute="bottom" constant="10" id="6Ra-Hc-OYs"/>
+                            <constraint firstItem="0jn-RK-0cO" firstAttribute="top" secondItem="xn4-SC-1pN" secondAttribute="bottom" constant="8" id="EZr-kM-ELj"/>
+                            <constraint firstItem="xn4-SC-1pN" firstAttribute="leading" secondItem="YLx-l0-0fu" secondAttribute="leading" constant="8" id="Vmr-bW-Gf6"/>
+                            <constraint firstItem="xn4-SC-1pN" firstAttribute="top" secondItem="c9V-G8-tDL" secondAttribute="bottom" constant="8" id="bIb-JD-TVO"/>
+                            <constraint firstAttribute="trailing" secondItem="xn4-SC-1pN" secondAttribute="trailing" constant="8" id="bQR-UY-0ri"/>
+                            <constraint firstAttribute="bottom" secondItem="lFA-Sc-mgL" secondAttribute="bottom" constant="10" id="hXj-uh-tvn"/>
+                            <constraint firstItem="lFA-Sc-mgL" firstAttribute="top" secondItem="xn4-SC-1pN" secondAttribute="bottom" constant="8" id="knr-ex-taf"/>
+                            <constraint firstItem="lFA-Sc-mgL" firstAttribute="leading" secondItem="0jn-RK-0cO" secondAttribute="trailing" constant="8" id="mTD-gs-NYD"/>
+                            <constraint firstAttribute="trailing" secondItem="c9V-G8-tDL" secondAttribute="trailing" constant="53" id="qEh-T6-pd8"/>
+                            <constraint firstItem="c9V-G8-tDL" firstAttribute="leading" secondItem="YLx-l0-0fu" secondAttribute="leading" constant="53" id="qYY-Aq-P2h"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
@@ -42,7 +74,9 @@
             </constraints>
             <size key="customSize" width="339" height="384"/>
             <connections>
+                <outlet property="coverImageView" destination="c9V-G8-tDL" id="bh6-hj-Gbc"/>
                 <outlet property="nameLabel" destination="xn4-SC-1pN" id="KbA-HA-3bY"/>
+                <outlet property="ratingLabel" destination="lFA-Sc-mgL" id="DZJ-oB-7TZ"/>
             </connections>
             <point key="canvasLocation" x="178.5" y="221"/>
         </collectionViewCell>

@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AlamofireImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DropDown.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -15,6 +25,11 @@
 			<false/>
 		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,6 +62,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2395D5B55A5543AAE051967095EBD86D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>24085F438788A072884B3FA2E6E02D7C</key>
 		<dict>
 			<key>primary</key>
@@ -57,12 +77,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>45B96BAE38C08EF5FD86F7EA73204DAC</key>
+		<key>5168099F2EBFC99A707C03C9EADE01A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5168099F2EBFC99A707C03C9EADE01A5</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -73,6 +98,11 @@
 			<true/>
 		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4944FEC314D1A66588651D006273ADE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

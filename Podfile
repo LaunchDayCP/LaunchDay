@@ -11,7 +11,7 @@ target 'Ready4Launch' do
   pod 'Firebase/Database'
   pod 'Material', '~> 2.4.6'
   pod 'DropDown'
-  #pod 'Kingfisher'
-  #pod 'Alamofire', '~> 4.4'
+  pod 'Kingfisher'
+  pod 'AlamofireImage'
 
 end

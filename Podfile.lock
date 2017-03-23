@@ -1,4 +1,7 @@
 PODS:
+  - Alamofire (4.2.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
   - DropDown (2)
   - Firebase/Auth (3.11.0):
     - Firebase/Core
@@ -39,18 +42,23 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.0)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.0)
   - GTMSessionFetcher/Core (1.1.7)
+  - Kingfisher (3.2.4)
   - Material (2.4.6):
     - Material/Core (= 2.4.6)
   - Material/Core (2.4.6)
 
 DEPENDENCIES:
+  - AlamofireImage
   - DropDown
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - Kingfisher
   - Material (~> 2.4.6)
 
 SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   DropDown: 744784d9c9aa505100e942c16acd05430cbb2f0a
   Firebase: b8134e285eb33201115bc688bc5d7f112923bc1f
   FirebaseAnalytics: 9c67af0ebeb8d2146c9b4ea2616439affa947b58
@@ -62,8 +70,9 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
+  Kingfisher: 8d80f39da403cd9c9ee11984e1655f4d6a566cdb
   Material: 43bd91d61e86ae2b6d6574e28fcb1ed48ff813cb
 
-PODFILE CHECKSUM: e5a02865fd833dff4260786bee7c48f73cfb0204
+PODFILE CHECKSUM: e41b4ddc4b0120d70c497ed178927a68d83eab97
 
 COCOAPODS: 1.1.1
