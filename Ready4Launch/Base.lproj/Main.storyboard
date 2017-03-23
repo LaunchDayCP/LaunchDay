@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ato-eq-ibp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -202,7 +202,7 @@
         <!--Item-->
         <scene sceneID="jfY-uB-ZBy">
             <objects>
-                <viewController id="F0V-PF-cc2" customClass="HomeViewController" customModule="Ready4Launch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="F0V-PF-cc2" customClass="GamesViewController" customModule="Ready4Launch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n2s-6I-cY7"/>
                         <viewControllerLayoutGuide type="bottom" id="kYb-CI-n4v"/>
@@ -210,9 +210,31 @@
                     <view key="view" contentMode="scaleToFill" id="KkG-nU-Ips">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k2E-Pm-6IQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Sor-OE-kdE">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kYb-CI-n4v" firstAttribute="top" secondItem="k2E-Pm-6IQ" secondAttribute="bottom" id="RQB-qo-U4x"/>
+                            <constraint firstAttribute="trailing" secondItem="k2E-Pm-6IQ" secondAttribute="trailing" id="gHF-Tp-Pc9"/>
+                            <constraint firstItem="k2E-Pm-6IQ" firstAttribute="top" secondItem="n2s-6I-cY7" secondAttribute="bottom" id="uU1-r4-DvG"/>
+                            <constraint firstItem="k2E-Pm-6IQ" firstAttribute="leading" secondItem="KkG-nU-Ips" secondAttribute="leading" id="v85-fj-Js9"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="WU3-WY-b9k"/>
+                    <connections>
+                        <outlet property="gamesCollectionView" destination="k2E-Pm-6IQ" id="iN0-Uy-3Kp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGV-sT-sxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,6 +246,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ato-eq-ibp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Gbd-MK-9kR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
