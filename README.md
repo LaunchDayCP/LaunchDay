@@ -25,10 +25,11 @@ The following **optional** features are implemented:
 - [ ] Custom notification settings on a per game basis
 
 ## Sprint 1
-- [ ] User can create account and log in with their credentials
-    - [ ] Persist user across app restarts
-- [ ] Allow gamers to search an expansive database of games (provided by igdb.com)
-    - [ ] Populate data via UICollectionView
+- [x] User can create account and log in with their credentials
+    - [x] Persist user across app restarts
+- [x] Allow gamers to get data from an expansive database of games (provided by igdb.com)
+    - [x] Populate data via UICollectionView
+- [x] Established MVVM architecture for our app
 
 
 ## Data Schema 
