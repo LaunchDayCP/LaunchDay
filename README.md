@@ -48,7 +48,8 @@ Here's a walkthrough of the model classes for our app:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+**Sprint 1**
+<img src='sprint1.gif' title='Video Walkthrough' width='' alt='Sprint 1' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
