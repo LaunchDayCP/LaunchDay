@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0225C7241E8B0E080042FFC6 /* IGDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0225C7231E8B0E080042FFC6 /* IGDB.swift */; };
 		025202971E833EE700726068 /* CollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252028E1E833EE600726068 /* CollectionViewExtensions.swift */; };
 		025202981E833EE700726068 /* CollectionViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252028F1E833EE600726068 /* CollectionViewProtocols.swift */; };
 		025202991E833EE700726068 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025202901E833EE600726068 /* Game.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0225C7231E8B0E080042FFC6 /* IGDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGDB.swift; sourceTree = "<group>"; };
 		0252028E1E833EE600726068 /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
 		0252028F1E833EE600726068 /* CollectionViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewProtocols.swift; sourceTree = "<group>"; };
 		025202901E833EE600726068 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0225C7221E8B0DF40042FFC6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0225C7231E8B0E080042FFC6 /* IGDB.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 		025202A01E833EF400726068 /* CollectionViewHelpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 		A18F4CF81E808B190025670D /* Ready4Launch */ = {
 			isa = PBXGroup;
 			children = (
+				0225C7221E8B0DF40042FFC6 /* Networking */,
 				025202A21E833F1F00726068 /* Extensions */,
 				A18F4D131E808D3D0025670D /* Model */,
 				A18F4D121E808D370025670D /* Views */,
@@ -322,6 +333,7 @@
 				A18F4CFA1E808B190025670D /* AppDelegate.swift in Sources */,
 				025202971E833EE700726068 /* CollectionViewExtensions.swift in Sources */,
 				0252029F1E833EE700726068 /* GameViewModelProtocols.swift in Sources */,
+				0225C7241E8B0E080042FFC6 /* IGDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
