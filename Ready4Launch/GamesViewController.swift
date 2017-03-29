@@ -15,7 +15,7 @@ class GamesViewController: UIViewController, GameViewModelDelegate, UICollection
     
     var gameViewModels = [GameViewModel]() {
         didSet {
-            
+            //self.gamesCollectionView.reloadData()
         }
     }
     
@@ -35,57 +35,28 @@ class GamesViewController: UIViewController, GameViewModelDelegate, UICollection
         
         // Register Nibs
         gamesCollectionView.register(GameCell.self)
-        
-        // Network Call
-        
-        networkRequest()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        IGDB().getGames(fromService: GameService()) { result in
+            self.gameViewModels = result
+            
+            // Handle UI changes on Main Thread
+            DispatchQueue.main.async {
+                self.gamesCollectionView.reloadData()
+            }
+
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func networkRequest() {
-        // Network Call
-        
-        let url = URL(string: "https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=*&filter[release_dates.platform][eq]=49&filter[aggregated_rating][gte]=90&filter[category][eq]=0")
-        let req = NSMutableURLRequest(url: url!)
-        req.setValue("eQFAu1b80Wmsh7vUdcXPwp4fd9ihp17b5x1jsnmcWru6Lgp3cY", forHTTPHeaderField: "X-Mashape-Key")
-        
-        URLSession.shared.dataTask(with: req as URLRequest) { data, response, error in
-            guard error == nil else {
-                print(error!)
-                return
-            }
-            guard let data = data else {
-                print("Data is empty")
-                return
-            }
-            
-            let json = try! JSONSerialization.jsonObject(with: data, options: [])
-            //print(json)
-            let results = json as! [NSDictionary]
-            
-            for result in results {
-                if result["cover"] != nil && result["videos"] != nil && result["screenshots"] != nil && result["release_dates"] != nil && result["genres"] != nil {
-                    
-                    let game = Game(game: result)
-                    self.gameViewModels.append(GameViewModel(game: game!))
-                    
-                }
-            }
-            
-            print(self.gameViewModels)
-            self.gamesCollectionView.reloadData()
-            
-        }.resume()
-        
-        
-    }
-    
 
     /*
     // MARK: - Navigation
