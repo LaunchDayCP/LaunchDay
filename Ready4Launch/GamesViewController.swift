@@ -27,11 +27,19 @@ class GamesViewController: UIViewController, GameViewModelDelegate, UICollection
 
     @IBOutlet weak var gamesCollectionView: UICollectionView!
     
+//    let numberOfColumns: CGFloat = 3
+//    var cellWidth: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         gamesCollectionView.delegate = self
         gamesCollectionView.dataSource = self
+        
+//        if let flowLayout = gamesCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+//            flowLayout.estimatedItemSize = CGSize(width: 50, height: 50)
+//            flowLayout.sectionInset = UIEdgeInsets(top: 5.0, left: 10.0, bottom: 5.0, right: 10.0)
+//        }
         
         // Register Nibs
         gamesCollectionView.register(GameCell.self)
@@ -52,6 +60,24 @@ class GamesViewController: UIViewController, GameViewModelDelegate, UICollection
 
         }
     }
+    
+//    override func viewDidLayoutSubviews()
+//    {
+//        if let flowLayout = gamesCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+//            let spaceBetweenCells = flowLayout.minimumInteritemSpacing * (numberOfColumns - 1)
+//            let totalCellAvailableWidth = gamesCollectionView.frame.size.width - flowLayout.sectionInset.left - flowLayout.sectionInset.right - spaceBetweenCells
+//            cellWidth = floor(totalCellAvailableWidth / numberOfColumns);
+//        }
+//    }
+//    
+//    override func viewWillLayoutSubviews()
+//    {
+//        super.viewWillLayoutSubviews()
+//        
+//        //recalculate the collection view layout when the view layout changes
+//        gamesCollectionView.collectionViewLayout.invalidateLayout()
+//    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

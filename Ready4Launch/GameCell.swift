@@ -14,17 +14,20 @@ class GameCell: UICollectionViewCell {
 
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet weak var coverImageView: UIImageView!
+    @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
     
     func bind(_ gameViewModel: GameViewModel) -> Self {
         // Configure Views
         nameLabel.text = gameViewModel.nameText
+        nameLabel.preferredMaxLayoutWidth = 50
+        
         ratingLabel.text = gameViewModel.rating
         
 //        coverImageView.kf.indicatorType = .activity
@@ -35,6 +38,8 @@ class GameCell: UICollectionViewCell {
         coverImageView.af_setImage(withURL: gameViewModel.cover)
         coverImageView.clipsToBounds = true
         print(gameViewModel.cover)
+        
+        coverImageView.height = self.height * 0.8
         
         return self
     }
