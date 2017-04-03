@@ -38,7 +38,7 @@ extension GamesViewController: UICollectionViewDataSource, UICollectionViewDeleg
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
 
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-        let availableWidth = view.frame.width - paddingSpace
+        let availableWidth = gamesCollectionView.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
         
 //        let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as GameCell
@@ -46,7 +46,7 @@ extension GamesViewController: UICollectionViewDataSource, UICollectionViewDeleg
 //        
 //        print(autoLayoutCell.height)
         
-        return CGSize(width: widthPerItem, height: widthPerItem * 2)
+        return CGSize(width: gamesCollectionView.frame.width - paddingSpace, height: 151)
         
 //        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GameCell", for: indexPath) as? GameCell {
 //            let cellMargins = cell.layoutMargins.left + cell.layoutMargins.right

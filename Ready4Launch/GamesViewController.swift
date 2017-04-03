@@ -35,6 +35,7 @@ class GamesViewController: UIViewController, GameViewModelDelegate, UICollection
         
         gamesCollectionView.delegate = self
         gamesCollectionView.dataSource = self
+        gamesCollectionView.translatesAutoresizingMaskIntoConstraints = false
         
 //        if let flowLayout = gamesCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
 //            flowLayout.estimatedItemSize = CGSize(width: 50, height: 50)

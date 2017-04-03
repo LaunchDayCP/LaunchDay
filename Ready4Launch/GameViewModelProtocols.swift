@@ -16,7 +16,7 @@ protocol GameViewModelProtocol {
     weak var delegate: GameViewModelDelegate? { get set }
     
     var game: Game { get }
-    var releaseDates: [NSDictionary] { get }
+    var releaseDates: String { get }
     var nameText: String { get }
     var rating: String { get }
     var cover: URL { get }

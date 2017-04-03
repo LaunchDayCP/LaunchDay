@@ -17,8 +17,14 @@ class GameViewModel: GameViewModelProtocol {
     
     internal var game: Game
     
-    internal var releaseDates: [NSDictionary] {
-        return game.releaseDates
+    internal var releaseDates: String {
+        for i in game.releaseDates {
+            if i["platform"] as! Int == 49 {
+                let releaseDate: String = i["human"] as! String
+                return releaseDate
+            }
+        }
+        return "TBD"
     }
     
     var nameText: String {

@@ -26,9 +26,10 @@ class GameCell: UICollectionViewCell {
     func bind(_ gameViewModel: GameViewModel) -> Self {
         // Configure Views
         nameLabel.text = gameViewModel.nameText
-        nameLabel.preferredMaxLayoutWidth = 50
+        //nameLabel.preferredMaxLayoutWidth = 50
         
         ratingLabel.text = gameViewModel.rating
+        releaseDateLabel.text = gameViewModel.releaseDates
         
 //        coverImageView.kf.indicatorType = .activity
 ////        coverImageView.kf.setImage(with: gameViewModel.cover, options: [.transition(.fade(0.2))])
